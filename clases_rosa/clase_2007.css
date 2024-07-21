@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    background: #000;
+    color:#fff ;
+
+    display: flex;
+}
+
+.containerButton{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.btn{
+    background: transparent;
+    color: #999;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+
+    box-shadow: 1.3rem .2rem 1rem #f00;
+}
+
+.containerTable{
+    width: 50%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: .1rem solid #f00;
+    text-align: center;
+}
