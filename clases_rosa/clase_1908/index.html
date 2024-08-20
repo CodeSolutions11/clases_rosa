@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input, button{
+            padding: .5rem 1rem;
+        }
+
+    </style>
+
+</head>
+<body> 
+
+    <nav>
+        <button class="btnInventario">Inventario</button>
+        <button class="btnBuscar">Buscar Producto</button>
+        
+    </nav>
+
+    <form action="">
+        <h1>Ingreasar Productos</h1>
+
+        <span>Nombre</span>
+        <input type="text">
+
+        <span>Cantidad</span>
+        <input type="number">
+
+        <span>Precio $</span>
+        <input type="number">
+
+        <button class="btn" type="submit">Guardar</button>
+    </form>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>

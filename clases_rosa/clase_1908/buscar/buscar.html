@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        form{
+            width: 40%;
+            height: 70%;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .div{
+            height: 20vh;
+            width: 50%;
+
+            text-align: center;
+        }
+        b{
+            color: #f00
+        }
+
+        .error{
+            background: #f00;
+            width: 15rem;
+            height: 15rem;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <span>Buscar Producto</span>
+        <input type="text" placeholder="Ingresar Nombre">
+        <button class="btn" type="submit">Buscar</button>
+    </form>
+    
+    <div class="div">
+        <span>Nombre:</span><b>Laptop</b>
+    </div>
+
+
+    <script src="buscar.js"></script>
+
+</body>
+</html>

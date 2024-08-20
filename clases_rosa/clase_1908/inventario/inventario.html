@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        table{
+            border: .3rem solid red;
+        }
+        tr{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Regresar</a>
+    </nav>
+    <h1>Inventario de Productos</h1>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+        
+    </table>
+
+    <script>
+        const table = document.querySelector('table')
+
+        const productos = JSON.parse(localStorage.getItem('productos'))
+
+        console.log(productos[0]);
+
+        productos.forEach(producto => {
+            console.log(producto);
+            table.insertAdjacentHTML('beforeend', `
+            <tr>
+                <td>${producto.nombre}</td>
+                <td>${producto.cantidad}</td>
+                <td>${producto.precio}$</td>
+            </tr>`)
+        });
+
+    </script>
+
+</body>
+</html>
